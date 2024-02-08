@@ -18,7 +18,7 @@ interface ConvexClientProviderProps {
 const CONVEX_URL = process.env.NEXT_PUBLIC_CONVEX_URL;
 
 //creating convex client provider cor deployment
-const convex = new ConvexReactClient(CONVEX_URL as string, { verbose: true });
+const convex = new ConvexReactClient(CONVEX_URL as string);
 
 //Configure ConvexProviderWithClerk
 
