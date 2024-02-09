@@ -32,6 +32,9 @@ export const ConvexClientProvider = ({
         {children}
 
         {/* if user authenticated, then show Loading */}
+        <Authenticated>{children}</Authenticated>
+
+        {/* if user authenticated, then show Loading */}
         <Authenticated>
           <Loading />
         </Authenticated>
