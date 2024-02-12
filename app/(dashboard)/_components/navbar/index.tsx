@@ -2,11 +2,15 @@
 
 import { UserButton } from "@clerk/nextjs";
 
+import { SearchInput } from "../search-input";
+
 const Navbar = () => {
   return (
     <>
-      <div className="flex items-center gap-x-4 p-5 bg-green-400">
-        <div className="hidden lg:flex lg:flex-1 bg-yellow-300">Search</div>
+      <div className="flex items-center gap-x-4 p-5">
+        <div className="hidden lg:flex lg:flex-1">
+          <SearchInput />
+        </div>
         <UserButton afterSignOutUrl="/" />
       </div>
     </>
